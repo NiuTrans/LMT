@@ -47,6 +47,15 @@ Our work makes the following main contributions:
 - We identify and analyze a previously overlooked issue, **directional degeneration**, in large-scale multilingual SFT with multi-way data and propose a simple yet effective **Strategic Downsampling** method to mitigate it.
 - We propose **Parallel Multilingual Prompting (PMP)**, which enhances cross-lingual transfer by incorporating auxiliary parallel sentence into the instruction.
 - We release LMT, a suite of **large-scale Chinese–English-centric** multilingual translation models in four sizes (0.6B/1.7B/4B/8B), providing strong baselines for future MMT research.
+
+### Support Languages
+
+| Resource Tier | Languages |
+| :---- | :---- |
+| High-resource Languages (13) | Arabic(ar), English(en), Spanish(es), German(de), French(fr), Italian(it), Japanese(ja), Dutch(nl), Polish(pl), Portuguese(pt), Russian(ru), Turkish(tr), Chinese(zh) |
+| Medium-resource Languages (18) | Bulgarian(bg), Bengali(bn), Czech(cs), Danish(da), Modern Greek(el), Persian(fa), Finnish(fi), Hindi(hi), Hungarian(hu), Indonesian(id), Korean(ko), Norwegian(no), Romanian(ro), Slovak(sk), Swedish(sv), Thai(th), Ukrainian(uk), Vietnamese(vi) |
+| Low-resouce Languages (29) | Amharic(am), Azerbaijani(az), Tibetan(bo), Modern Hebrew(he), Croatian(hr), Armenian(hy), Icelandic(is), Javanese(jv), Georgian(ka), Kazakh(kk), Central Khmer(km), Kirghiz(ky), Lao(lo), Chinese Mongolian(mn_cn), Marathi(mr), Malay(ms), Burmese(my), Nepali(ne), Pashto(ps), Sinhala(si), Swahili(sw), Tamil(ta), Telugu(te), Tajik(tg), Tagalog(tl), Uighur(ug), Urdu(ur), Uzbek(uz), Yue Chinese(yue) |
+
 ### Usage
 ```python
 from transformers import AutoModelForCausalLM, AutoTokenizer
