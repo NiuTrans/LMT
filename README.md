@@ -33,9 +33,9 @@ We have made the following resources available:
 
 | Resource         | Description                                         | Link                                                      |
 |------------------|-----------------------------------------------------|-----------------------------------------------------------|
-| LMT-60-*B    | Our high-performance multilingual translation models covering 60 languages and 234 directions. Available in four sizes: 0.6B / 1.7B / 4B / 8B.  | [LMT-60-0.6B](https://huggingface.co/NiuTrans/LMT-60-0.6B) <br> [LMT-60-1.7B](https://huggingface.co/NiuTrans/LMT-60-1.7B) <br> [LMT-60-4B](https://huggingface.co/NiuTrans/LMT-60-4B) <br> [LMT-60-8B](https://huggingface.co/NiuTrans/LMT-60-8B) |
+| LMT-60-*B    | Our high-performance multilingual translation models cover 60 languages and 234 directions. Available in four sizes: 0.6B / 1.7B / 4B / 8B.  | [LMT-60-0.6B](https://huggingface.co/NiuTrans/LMT-60-0.6B) <br> [LMT-60-1.7B](https://huggingface.co/NiuTrans/LMT-60-1.7B) <br> [LMT-60-4B](https://huggingface.co/NiuTrans/LMT-60-4B) <br> [LMT-60-8B](https://huggingface.co/NiuTrans/LMT-60-8B) |
 | LMT-60-*B-Base    | Our continued pre-training of Qwen3 on 90B tokens serves as the foundation for large-scale translation adaptation. Available in four sizes: 0.6B / 1.7B / 4B / 8B. | [LMT-60-0.6B-Base](https://huggingface.co/NiuTrans/LMT-60-0.6B-Base) <br> [LMT-60-1.7B-Base](https://huggingface.co/NiuTrans/LMT-60-1.7B-Base) <br> [LMT-60-4B-Base](https://huggingface.co/NiuTrans/LMT-60-4B-Base) <br> [LMT-60-8B-Base](https://huggingface.co/NiuTrans/LMT-60-8B-Base) |
-| LMT-60-sft-data   | Our SFT dataset including Flores-200 devset, NTREX-128, SMol, WMT14–23, and IWSLT17–24 test sets, totaling 596K samples.	 | [LMT-60-sft-data](https://huggingface.co/datasets/NiuTrans/LMT-60-sft-data) |
+| LMT-60-sft-data   | Our SFT dataset including Flores-200 devset, NTREX-128, SMol, WMT14–23, and IWSLT17–24 test sets, totaling 567K samples.	 | [LMT-60-sft-data](https://huggingface.co/datasets/NiuTrans/LMT-60-sft-data) |
 | FLORES-mn_cn   | A new Chinese–Mongolian evaluation set annotated by native speakers to extend the FLORES-200 benchmark.	 | ./data/flores_mn_cn |
 
 # 📄 Contents 
@@ -45,7 +45,7 @@ We have made the following resources available:
 In this paper, we take a step toward overcoming the prevailing English-centric bias in MMT. We introduce **LMT**, a suite of **Chinese-English-centric** MMT models trained on **90B** mixed monolingual and bilingual tokens, covering **60 languages across 234 translation directions** and achieving **SOTA performance** among models with similar language coverage.
 Our work makes the following main contributions:
 - We identify and analyze a previously overlooked issue, **directional degeneration**, in large-scale multilingual SFT with multi-way data and propose a simple yet effective **Strategic Downsampling** method to mitigate it.
-- We propose **Parallel Multilingual Prompting (PMP)**, which enhances cross-lingual transfer by incorporating auxiliary parallel sentence into the instruction.
+- We propose **Parallel Multilingual Prompting (PMP)**, which enhances cross-lingual transfer by incorporating an auxiliary parallel sentence into the instruction.
 - We release LMT, a suite of **large-scale Chinese–English-centric** multilingual translation models in four sizes (0.6B/1.7B/4B/8B), providing strong baselines for future MMT research.
 
 ### Support Languages
