@@ -42,7 +42,7 @@ We have made the following resources available:
 ## Beyond English: Toward Inclusive and Scalable Multilingual Machine Translation with LLMs
 
 ### Introduction
-In this paper, we take a step toward overcoming the prevailing English-centric bias in MMT. We introduce **LMT**, a suite of **Chinese-English-centric** MMT models trained on **90B** mixed monolingual and bilingual tokens, covering **60 languages across 234 translation directions** and achieving **SOTA performance** among models with similar language coverage.
+In this project, we take a step toward overcoming the prevailing English-centric bias in MMT. We introduce **LMT**, a suite of **Chinese-English-centric** MMT models trained on **90B** mixed monolingual and bilingual tokens, covering **60 languages across 234 translation directions** and achieving **SOTA performance** among models with similar language coverage.
 Our work makes the following main contributions:
 - We identify and analyze a previously overlooked issue, **directional degeneration**, in large-scale multilingual SFT with multi-way data and propose a simple yet effective **Strategic Downsampling** method to mitigate it.
 - We propose **Parallel Multilingual Prompting (PMP)**, which enhances cross-lingual transfer by incorporating an auxiliary parallel sentence into the instruction.
