@@ -94,7 +94,7 @@ LANG_TABLE = {
     "ms": "Malay",
     "mt": "Maltese",
     "my": "Burmese",
-    "nb": "Norwegian Bokmål",
+    "nb": "Norwegian",
     "ne": "Nepali",
     "nl": "Dutch",
     "nn": "Norwegian Nynorsk",
