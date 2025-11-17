@@ -53,7 +53,7 @@ Our work makes the following main contributions:
 | Resource Tier | Languages |
 | :---- | :---- |
 | High-resource Languages (13) | Arabic(ar), English(en), Spanish(es), German(de), French(fr), Italian(it), Japanese(ja), Dutch(nl), Polish(pl), Portuguese(pt), Russian(ru), Turkish(tr), Chinese(zh) |
-| Medium-resource Languages (18) | Bulgarian(bg), Bengali(bn), Czech(cs), Danish(da), Modern Greek(el), Persian(fa), Finnish(fi), Hindi(hi), Hungarian(hu), Indonesian(id), Korean(ko), Norwegian(no), Romanian(ro), Slovak(sk), Swedish(sv), Thai(th), Ukrainian(uk), Vietnamese(vi) |
+| Medium-resource Languages (18) | Bulgarian(bg), Bengali(bn), Czech(cs), Danish(da), Modern Greek(el), Persian(fa), Finnish(fi), Hindi(hi), Hungarian(hu), Indonesian(id), Korean(ko), Norwegian(nb), Romanian(ro), Slovak(sk), Swedish(sv), Thai(th), Ukrainian(uk), Vietnamese(vi) |
 | Low-resouce Languages (29) | Amharic(am), Azerbaijani(az), Tibetan(bo), Modern Hebrew(he), Croatian(hr), Armenian(hy), Icelandic(is), Javanese(jv), Georgian(ka), Kazakh(kk), Central Khmer(km), Kirghiz(ky), Lao(lo), Chinese Mongolian(mn_cn), Marathi(mr), Malay(ms), Burmese(my), Nepali(ne), Pashto(ps), Sinhala(si), Swahili(sw), Tamil(ta), Telugu(te), Tajik(tg), Tagalog(tl), Uighur(ug), Urdu(ur), Uzbek(uz), Yue Chinese(yue) |
 
 ### Usage
@@ -65,7 +65,9 @@ model_name = "NiuTrans/LMT-60-8B"
 tokenizer = AutoTokenizer.from_pretrained(model_name, padding_side='left')
 model = AutoModelForCausalLM.from_pretrained(model_name)
 
-prompt = "Translate the following text from English into Chinese.\nEnglish: The concept came from China where plum blossoms were the flower of choice.\nChinese: "
+prompt = "Translate the following text from English into Chinese.
+English: The concept came from China where plum blossoms were the flower of choice.
+Chinese: "
 messages = [{"role": "user", "content": prompt}]
 text = tokenizer.apply_chat_template(
     messages,
