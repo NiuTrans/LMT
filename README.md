@@ -79,7 +79,7 @@ model_inputs = tokenizer([text], return_tensors="pt").to(model.device)
 generated_ids = model.generate(**model_inputs, max_new_tokens=512, num_beams=5, do_sample=False)
 output_ids = generated_ids[0][len(model_inputs.input_ids[0]):].tolist() 
 
-outputs = tokenizer.batch_decode(output_ids, skip_special_tokens=True)
+outputs = tokenizer.decode(output_ids, skip_special_tokens=True)
 
 print("response:", outputs)
 ```
