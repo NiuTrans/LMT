@@ -65,9 +65,9 @@ model_name = "NiuTrans/LMT-60-8B"
 tokenizer = AutoTokenizer.from_pretrained(model_name, padding_side='left')
 model = AutoModelForCausalLM.from_pretrained(model_name)
 
-prompt = "Translate the following text from English into Chinese.
+prompt = """Translate the following text from English into Chinese.
 English: The concept came from China where plum blossoms were the flower of choice.
-Chinese:"
+Chinese:"""
 messages = [{"role": "user", "content": prompt}]
 text = tokenizer.apply_chat_template(
     messages,
