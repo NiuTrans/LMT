@@ -14,7 +14,7 @@
 
 •  [📢 News](#-news) 
 •  [🤗 Open Resources](#-open-resources)
-•  [📄 Contents](#-contents)
+•  [📄 Papers](#-papers)
 </p>
 
 </div>
@@ -22,7 +22,7 @@
 The LMT project aims to advance the frontier of Multilingual Machine Translation (MMT) by building **Inclusive**, **Scalable**, and **High-performance** multilingual translation models.
 
 # 📢 News
-- *2026.4.18*: Our **RouteLMT** paper [RouteLMT: Learned Sample Routing for Hybrid LLM Translation Deployment](https://arxiv.org/abs/2604.22520) has been accepted to **ACL 2026 Industry Track**. RouteLMT learns to route translation samples among LLM-based MT models of different sizes, enabling more efficient hybrid deployment.
+- *2026.4.18*: Our **RouteLMT** paper [RouteLMT: Learned Sample Routing for Hybrid LLM Translation Deployment](https://arxiv.org/abs/2604.22520) has been accepted to **ACL 2026 Industry Track (Oral)**. RouteLMT learns to route translation samples among LLM-based MT models of different sizes, enabling more efficient hybrid deployment.
 - *2026.4.7*: Our **LMT** paper [NiuTrans.LMT: Toward Inclusive and Scalable Multilingual Machine Translation with LLMs](https://arxiv.org/abs/2511.07003) has been accepted to **ACL 2026 Main Conference**. This work introduces a family of strong LLM-based MT models covering 60 languages and 234 translation directions.
 - *2025.11.11*: Our **LMT** paper [NiuTrans.LMT: Toward Inclusive and Scalable Multilingual Machine Translation with LLMs](https://arxiv.org/abs/2511.07003) and corresponding [Models](https://huggingface.co/NiuTrans/LMT-60-8B) are released.
 
